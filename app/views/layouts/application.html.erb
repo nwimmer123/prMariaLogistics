@@ -21,18 +21,16 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
 
-          <% if current_user %>
-              <li><%= link_to "Profile", user_path(current_user) %></li>
-              <li><%= link_to "Log Out", logout_path %></li>
-          <% else %>
-              <li><%= link_to "Signup", new_user_path %></li>
-              <li><%= link_to "Log In", login_path %></li>
-          <% end %>     
-        </ul>
-      </div><!-- /.navbar-collapse -->
+        <% if current_user %>
+            <li><%= link_to "Profile", user_path(current_user) %></li>
+            <li><%= link_to "Log Out", logout_path %></li>
+        <% else %>
+            <li><%= link_to "Signup", new_user_path %></li>
+            <li><%= link_to "Log In", login_path %></li>
+        <% end %>     
+      </ul>
     </nav>
   </div>
   <br>

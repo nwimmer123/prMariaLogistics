@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>SUPPORT PUERTO RICO'S RECOVERY!</h1> 
+  <h2>HOW CAN YOU HELP?</h2>
+</div>
+
+<div class="container">
+  <% if current_user %>
+    <li><%= link_to "Volunteer", root_path %></li>
+    <li><%= link_to "Donate Goods", root_path %></li>
+    <li><%= link_to "Donate Money", root_path %></li>
+    <li><%= link_to "Provide Air Transport", root_path %></li>
+    <li><%= link_to "Provide Land Transport", root_path %></li>
+    <li><%= link_to "Request/Provide Medivac", root_path %></li>
+    <li><%= link_to "Warehouse Goods", root_path %></li>
+  <% else %>
+    <li>Volunteer</li>
+    <li>Donate Goods</li>
+    <li>Donate Money</li>
+    <li>Provide Air Transport</li>
+    <li>Provide Land Transport</li>
+    <li>Request/Provide Medivac</li>
+    <li>Warehouse Goods</li>
+    <br>
+    <p>To provide services you must please Log In or Sign Up!</p>
+    <p>Thanks!</p>
+
+  <% end %>
+</div>
