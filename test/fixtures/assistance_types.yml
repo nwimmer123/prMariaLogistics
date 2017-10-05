@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  volunteer: MyString
+  air_transport: MyString
+  land_transport: MyString
+  cargo: MyString
+  money: MyString
+  warehouse: MyString
+  medivac: MyString
+
+two:
+  volunteer: MyString
+  air_transport: MyString
+  land_transport: MyString
+  cargo: MyString
+  money: MyString
+  warehouse: MyString
+  medivac: MyString

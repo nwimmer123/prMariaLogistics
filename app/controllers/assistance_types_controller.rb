@@ -1,0 +1,2 @@
+class AssistanceTypesController < ApplicationController
+end

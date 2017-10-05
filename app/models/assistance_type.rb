@@ -1,0 +1,2 @@
+class AssistanceType < ApplicationRecord
+end
