@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 
   has_secure_password
+  has_many :cargos
 
   def self.confirm(params)
 		@user = User.find_by({email: params[:email]})
