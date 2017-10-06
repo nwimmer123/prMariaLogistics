@@ -17,11 +17,14 @@ ActiveRecord::Schema.define(version: 20171005224429) do
 
   create_table "cargos", force: :cascade do |t|
     t.string "goods"
+    t.string "address"
     t.string "city"
     t.string "state"
     t.string "quantity"
     t.string "weight"
     t.string "size"
+    t.string "shipping"
+    t.string "funding"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
