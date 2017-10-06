@@ -17,7 +17,8 @@ ActiveRecord::Schema.define(version: 20171005224429) do
 
   create_table "cargos", force: :cascade do |t|
     t.string "type"
-    t.string "location"
+    t.string "city"
+    t.string "state"
     t.string "quantity"
     t.string "weight"
     t.string "size"
