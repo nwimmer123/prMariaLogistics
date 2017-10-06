@@ -3,43 +3,88 @@
     <fieldset>
       <h1 class="text-center">Cargo or Goods</h1>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :goods, required: true, class: "form-control", placeholder: "Goods to be donated" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Description of item:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :goods, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :address, required: true, class: "form-control", placeholder: "City" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Address:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :address, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :state, required: true, class: "form-control", placeholder: "City" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>City:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :city, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :city, required: true, class: "form-control", placeholder: "State" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>State:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :state, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :quantity, required: true, class: "form-control", placeholder: "Quantity" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Quantiy:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :quantity, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :weight, required: true, class: "form-control", placeholder: "Weight" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Weight:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :weight, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :size, required: true, class: "form-control", placeholder: "Size" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Size:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :size, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :shipping, required: true, class: "form-control", placeholder: "Does this require shipping?" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>Does this require shipping?:</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :shipping, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
-        <%= f.text_field :funding, required: true, class: "form-control", placeholder: "Does this require funding?" %>
+      <div class="form-group row">
+        <div class="col-md-2">
+          <p>If it requires funding, how much?</p>
+        </div>
+        <div class="col-md-10">
+          <%= f.text_field :funding, required: true, class: "form-control"%>
+        </div>
       </div>
 
-      <div class="form-group col-md-8">
+      <div class="form-group row">
         <%= f.submit "Submit", class: "btn btn-success" %>
       </div>
 
