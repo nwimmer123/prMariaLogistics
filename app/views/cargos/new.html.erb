@@ -1,0 +1,36 @@
+<div class="container">
+  <%= form_for @cargo, url: {action: "create"} do |f| %>
+    <fieldset>
+      <h1 class="text-center">Cargo or Goods</h1>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :type, required: true, class: "form-control", placeholder: "Goods to be donated" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :location, required: true, class: "form-control", placeholder: "city" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :location, required: true, class: "form-control", placeholder: "state" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :quantity, required: true, class: "form-control", placeholder: "" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :weight, required: true, class: "form-control", placeholder: "" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.text_field :size, required: true, class: "form-control", placeholder: "" %>
+      </div>
+
+      <div class="form-group col-md-8">
+        <%= f.submit "Search", class: "btn btn-success" %>
+      </div>
+
+    </fieldset>
+  <% end %>
+</div>
