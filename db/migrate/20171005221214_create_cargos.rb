@@ -1,7 +1,7 @@
 class CreateCargos < ActiveRecord::Migration[5.1]
   def change
     create_table :cargos do |t|
-      t.string :type
+      t.string :goods
       t.string :city
       t.string :state
       t.string :quantity

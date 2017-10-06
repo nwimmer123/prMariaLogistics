@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20171005224429) do
   enable_extension "plpgsql"
 
   create_table "cargos", force: :cascade do |t|
-    t.string "type"
+    t.string "goods"
     t.string "city"
     t.string "state"
     t.string "quantity"

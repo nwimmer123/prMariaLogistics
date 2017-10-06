@@ -4,31 +4,31 @@
       <h1 class="text-center">Cargo or Goods</h1>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :type, required: true, class: "form-control", placeholder: "Goods to be donated" %>
+        <%= f.text_field :goods, required: true, class: "form-control", placeholder: "Goods to be donated" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :location, required: true, class: "form-control", placeholder: "city" %>
+        <%= f.text_field :state, required: true, class: "form-control", placeholder: "City" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :location, required: true, class: "form-control", placeholder: "state" %>
+        <%= f.text_field :city, required: true, class: "form-control", placeholder: "State" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :quantity, required: true, class: "form-control", placeholder: "" %>
+        <%= f.text_field :quantity, required: true, class: "form-control", placeholder: "Quantity" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :weight, required: true, class: "form-control", placeholder: "" %>
+        <%= f.text_field :weight, required: true, class: "form-control", placeholder: "Weight" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.text_field :size, required: true, class: "form-control", placeholder: "" %>
+        <%= f.text_field :size, required: true, class: "form-control", placeholder: "Size" %>
       </div>
 
       <div class="form-group col-md-8">
-        <%= f.submit "Search", class: "btn btn-success" %>
+        <%= f.submit "Submit", class: "btn btn-success" %>
       </div>
 
     </fieldset>
