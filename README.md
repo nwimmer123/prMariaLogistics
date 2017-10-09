@@ -37,8 +37,8 @@ The general concept is a platform that helps users identify their role, what the
 The general back end design is a database that filters for the type of user / workflow selected.  As they identify their “haves”, that aspect of the workflow is met filters for the type of user and corresponding columns.  Then as they identify their “need”  that each user has their specific type of dashboard, or they can see the database of all items and points of contact for them.
 
 # Functionality
-##User Types & Walkthroughs
-###I have money
+## User Types & Walkthroughs
+### I have money
 
 This is a unique user that wants to find what part of the process to provide funds for, and is looking to answer “Where can I best apply this funding to maximize the impact where I see it the most necessary?”
 
@@ -48,7 +48,7 @@ This is a unique user that wants to find what part of the process to provide fun
 
 *	Target funding by group: See a database of all the available groups, and what they are working on.  See the point of contact and reach out to offer the funds.
 
-###I want to volunteer from the mainland
+### I want to volunteer from the mainland
 
 After creating a login, this user wants to either:
 
@@ -60,7 +60,7 @@ After creating a login, this user wants to either:
 
 *	Provide a service:  This type of volunteering involves essential but ancillary services to the principle workflow, including providing temporary housing for displaced peoples, helping displaced people find homes, helping displaced people find jobs, or alternatively provide work for displaces people, provide training for displaced people, provide translation services, etc…
 
-###I want to volunteer on the island
+### I want to volunteer on the island
 
 	After creating a login, this user want to:
 
@@ -70,7 +70,7 @@ After creating a login, this user wants to either:
 
 *	Provide a Service: Travel to the island in order to provide a business / personal service (e.g. answer bulletin board questions for people still looking for / checking on loved ones)
 
-###I have goods I want to donate
+### I have goods I want to donate
 	
 After creating a login, this user:
 
@@ -79,7 +79,7 @@ After creating a login, this user:
 *	Has a product/service they would like to offer to the island
 *	Other donations (e.g. fuel, concert)
 
-###I have a trucking company
+### I have a trucking company
 
 After creating a login, this user want to:
 
@@ -91,7 +91,7 @@ After creating a login, this user want to:
 
 *	Transport goods from PR Airports to Distribution Centers
 
-###I have a warehouse
+### I have a warehouse
 
 After creating a login, this user want to:
 
@@ -100,7 +100,7 @@ After creating a login, this user want to:
 *	Identify when goods will be leaving their warehouse
 
 
-###I have a plane
+### I have a plane
 
 After creating a login, this user want to:
 
