@@ -20,16 +20,16 @@ class UsersController < ApplicationController
     end
   end
 
-    def show
-      @user = User.find_by_id(params[:id])
-      @books = @user.books.order(current: :desc)
-    end
+  def show
+    @user = User.find_by_id(params[:id])
+    @books = @user.books.order(current: :desc)
+  end
 
   def edit
   end
 
   def update
-    current_params = params.require(:user).permit(:name, :email)
+    current_params = params.require(:user).permit(:name, :email, :role)
     @user.update_attributes(current_params)
     redirect_to user_path
   end
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:name, :email, :password, :role)
   end
 
 end
