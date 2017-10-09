@@ -6,7 +6,7 @@ The purpose of this application is to centralize the hundreds of ad hoc workflow
 
 Fork and clone. Picjk an issue/feature. Develop and submit pull requests. I'll check them out, make sure they work and then put them in. 
 
-I have pretty limited time. So ANY additional assistance to get his launched is greatly appreciated! The scope of the project is detailed in the readme and there are a bunch of features I need to develop listed in the issues board. 
+I have pretty limited time. So ANY additional assistance to get his launched is greatly appreciated! The scope of the project is detailed in the readme and there are a bunch of features I need to develop listed in the issues board. The description in issues is brief, just the main idea. Please refer back to the readme for more details on planned funcionality.
 
 # What the site will do
 
