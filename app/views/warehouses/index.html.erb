@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Avaliable Warehouses</h2>
+</div>
+
+<div class="container">
+  <% @warehouses.each do |d| %>
+
+    <p>Capacity: <%= d.capacity %></p>
+    <p>Avaliability: <%= d.avaliabilty %></p>
+    <p>Funding Required: <%= d.funding %></p>
+    <p>Location: <%= d.location %></p>
+
+  <% end %>
+</div>

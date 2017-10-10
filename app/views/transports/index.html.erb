@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Avaliable Transport</h2>
+</div>
+
+<div class="container">
+  <% @tranports.each do |d| %>
+
+    <p>Type: <%= d.role %></p>
+    <p>Range: <%= d.range %></p>
+    <p>Capacity: <%= d.capacity %></p>
+    <p>Type: <%= d.name %></p>
+    <p>Avaliability: <%= d.avaliabilty %></p>
+    <p>Funding Required: <%= d.funding %></p>
+    <p>Location: <%= d.hub %></p>
+
+  <% end %>
+</div>
