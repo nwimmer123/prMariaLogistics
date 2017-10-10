@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  role: MyString
+  range: MyString
+  capacity: MyString
+  name: MyString
+  avaliability: MyString
+  price: MyString
+  hub: MyString
+
+two:
+  role: MyString
+  range: MyString
+  capacity: MyString
+  name: MyString
+  avaliability: MyString
+  price: MyString
+  hub: MyString
