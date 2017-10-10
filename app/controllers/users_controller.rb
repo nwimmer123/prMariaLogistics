@@ -22,7 +22,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by_id(params[:id])
-    @books = @user.books.order(current: :desc)
+    @cargos = @user.cargos
+    @transports = @user.transports
+    @warehouses = @user.warehouses
   end
 
   def edit
