@@ -6,7 +6,7 @@ class CreateTransports < ActiveRecord::Migration[5.1]
       t.string :capacity
       t.string :name
       t.string :avaliability
-      t.string :price
+      t.string :funding
       t.string :hub
 
       t.timestamps

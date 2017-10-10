@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20171010001616) do
     t.string "capacity"
     t.string "name"
     t.string "avaliability"
-    t.string "price"
+    t.string "funding"
     t.string "hub"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
