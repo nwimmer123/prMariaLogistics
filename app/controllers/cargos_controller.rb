@@ -30,10 +30,6 @@ class CargosController < ApplicationController
   end
 
   def destroy
-    @reviews = Review.where(cargo_id: @cargo.id)
-    @reviews.each do |review|
-      review.destroy
-    end
     @cargo.destroy
     redirect_to user_path(@user.id)
   end

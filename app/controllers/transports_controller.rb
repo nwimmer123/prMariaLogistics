@@ -12,7 +12,7 @@ class TransportsController < ApplicationController
   end
 
   def create
-    @transport = Transport.new(cargo_params)
+    @transport = Transport.new(transport_params)
     @transport.user = current_user
     @transport.save
     redirect_to root_path
@@ -25,15 +25,11 @@ class TransportsController < ApplicationController
   end
 
   def update
-    @transport.update_attributes(cargo_params)
+    @transport.update_attributes(transport_params)
     redirect_to user_path(@user.id)
   end
 
   def destroy
-    @reviews = Review.where(cargo_id: @transport.id)
-    @reviews.each do |review|
-      review.destroy
-    end
     @transport.destroy
     redirect_to user_path(@user.id)
   end
