@@ -3,18 +3,20 @@
   <h2>Donated Cargo</h2>
 </div>
 
-<div class="container">
-  <% @cargos.each do |d| %>
-
-    <p>Item: <%= d.goods %></p>
-    <p>Adress: <%= d.address %></p>
-    <p>City: <%= d.city %></p>
-    <p>State: <%= d.state %></p>
-    <p>Quantity: <%= d.quantity %></p>
-    <p>Weight: <%= d.weight %></p>
-    <p>Size: <%= d.size %></p>
-    <p>Needs Shiping: <%= d.shipping %></p>
-    <p>Needs Funding: <%= d.funding %></p>
-
-  <% end %>
+<div class="info container">
+  <div class="row">
+    <% @cargos.each do |d| %>
+        <div class="col-md-4">
+        <p>Item: <%= d.goods %></p>
+        <p>Adress: <%= d.address %></p>
+        <p>City: <%= d.city %></p>
+        <p>State: <%= d.state %></p>
+        <p>Quantity: <%= d.quantity %></p>
+        <p>Weight: <%= d.weight %></p>
+        <p>Size: <%= d.size %></p>
+        <p>Needs Shiping: <%= d.shipping %></p>
+        <p>Needs Funding: <%= d.funding %></p>
+      </div>
+    <% end %>
+  </div>
 </div>

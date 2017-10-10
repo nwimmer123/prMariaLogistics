@@ -2,16 +2,18 @@
   <h2>Avaliable Transport</h2>
 </div>
 
-<div class="container">
-  <% @transports.each do |d| %>
-
-    <h5>Type: <%= d.role %></h5>
-    <p>Kind: <%= d.name %></p>
-    <p>Location: <%= d.hub %></p>
-    <p>Range: <%= d.range %></p>
-    <p>Capacity: <%= d.capacity %></p>
-    <p>Avaliability: <%= d.avaliability %></p>
-    <p>Funding Required: <%= d.funding %></p>
-    
-  <% end %>
+<div class="info container">
+  <div class="row">
+    <% @transports.each do |d| %>
+      <div class="col-md-4">
+        <h5>Type: <%= d.role %></h5>
+        <p>Kind: <%= d.name %></p>
+        <p>Location: <%= d.hub %></p>
+        <p>Range: <%= d.range %></p>
+        <p>Capacity: <%= d.capacity %></p>
+        <p>Avaliability: <%= d.avaliability %></p>
+        <p>Funding Required: <%= d.funding %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
