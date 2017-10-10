@@ -1,4 +1,10 @@
-<div class="page">
+
+<% if @user.role == "Node"%>
+  <p> You're a node </p>
+<% else %>
+  <p>you're a cordinaitor.</p>
+<% end %>
+
 
   <div class="container"> 
     <h1 id="info text-center">Profile</h1>
@@ -7,5 +13,3 @@
   </div>
 
 
-
-</div>
