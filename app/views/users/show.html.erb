@@ -1,6 +1,60 @@
 <div class="container"> 
   <h1>Profile</h1>
-  <h4>Name: <%= @user.name %></h4>
+  <h4><%= @user.name %></h4>
+</div>
+
+<div class="info container">
+
+  <% if @cargos.length > 0 %>
+    <h4 class="info-title">Goods You've Donated</h4>
+    <div class="row">
+      <% @cargos.each do |d| %>
+          <div class="col-md-4">
+          <p>Item: <%= d.goods %></p>
+          <p>Adress: <%= d.address %></p>
+          <p>City: <%= d.city %></p>
+          <p>State: <%= d.state %></p>
+          <p>Quantity: <%= d.quantity %></p>
+          <p>Weight: <%= d.weight %></p>
+          <p>Size: <%= d.size %></p>
+          <p>Needs Shiping: <%= d.shipping %></p>
+          <p>Needs Funding: <%= d.funding %></p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% if @transports.length > 0 %>
+    <h4 class="info-title">Transport You've Provided</h4>
+    <div class="row">
+      <% @transports.each do |d| %>
+        <div class="col-md-4">
+          <h5>Type: <%= d.role %></h5>
+          <p>Kind: <%= d.name %></p>
+          <p>Location: <%= d.hub %></p>
+          <p>Range: <%= d.range %></p>
+          <p>Capacity: <%= d.capacity %></p>
+          <p>Avaliability: <%= d.avaliability %></p>
+          <p>Funding Required: <%= d.funding %></p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% if @warehouses.length > 0 %>
+    <h4 class="info-title">Warehouse Space You've Provided</h4>
+    <div class="row">
+      <% @warehouses.each do |d| %>
+        <div class="col-md-4">
+          <h5>Location: <%= d.location %></h5>
+          <p>Capacity: <%= d.capacity %></p>
+          <p>Avaliability: <%= d.avaliability %></p>
+          <p>Funding Required: <%= d.funding %></p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  
 </div>
 
 <% if @user.role == "Node" %>
