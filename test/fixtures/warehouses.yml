@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  funding: MyString
+  capacity: MyString
+  avaliability: MyString
+  user: one
+
+two:
+  location: MyString
+  funding: MyString
+  capacity: MyString
+  avaliability: MyString
+  user: two

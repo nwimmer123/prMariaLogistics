@@ -1,32 +1,11 @@
-      <%= form_for :transport, url: transports_path do |f| %>
+      <%= form_for :warehouse, url: warehouses_path do |f| %>
         <fieldset>
-          <h1 class="text-center">Transport Form</h1>
+          <h1 class="text-center">Warehouse Form</h1>
 
           <div class="form-group">
-            <label class="col-md-4 control-label" for="role">Air or land transport?</label>
+            <label class="col-md-4 control-label" for="location">Location</label>
             <div class="col-md-8">
-              <%= f.select :role, [["Air", "Air"], ["Land", "Land"]], class: "form-control" %>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="capacity">What type of vehicle?</label>
-            <div class="col-md-8">
-              <%= f.text_field :capacity, required: true, class: "form-control" %><br>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="hub">Main hub/ point of origin</label>
-            <div class="col-md-8">
-              <%= f.text_field :hub, required: true, class: "form-control" %><br>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="range">Range</label>
-            <div class="col-md-8">
-              <%= f.text_field :range, required: true, class: "form-control" %><br>
+              <%= f.text_field :location, required: true, class: "form-control" %><br>
             </div>
           </div>
 
