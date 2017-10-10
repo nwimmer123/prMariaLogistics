@@ -37,7 +37,7 @@ class CargosController < ApplicationController
   private
 
   def cargo_params
-    params.require(:cargo).permit(:goods, :state, :city, :quantity, :weight, :size)
+    params.require(:cargo).permit(:goods, :state, :city, :quantity, :weight, :size, :address, :funding, :shipping)
   end
 
   def current_cargo
