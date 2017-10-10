@@ -5,13 +5,13 @@
 <div class="container">
   <% @transports.each do |d| %>
 
-    <p>Type: <%= d.role %></p>
+    <h5>Type: <%= d.role %></h5>
+    <p>Kind: <%= d.name %></p>
+    <p>Location: <%= d.hub %></p>
     <p>Range: <%= d.range %></p>
     <p>Capacity: <%= d.capacity %></p>
-    <p>Type: <%= d.name %></p>
     <p>Avaliability: <%= d.avaliability %></p>
     <p>Funding Required: <%= d.funding %></p>
-    <p>Location: <%= d.hub %></p>
-
+    
   <% end %>
 </div>

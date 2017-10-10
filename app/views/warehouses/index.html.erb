@@ -5,10 +5,11 @@
 <div class="container">
   <% @warehouses.each do |d| %>
 
+    <h5>Location: <%= d.location %></h5>
     <p>Capacity: <%= d.capacity %></p>
     <p>Avaliability: <%= d.avaliability %></p>
     <p>Funding Required: <%= d.funding %></p>
-    <p>Location: <%= d.location %></p>
+    
 
   <% end %>
 </div>
