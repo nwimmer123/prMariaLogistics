@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  two: MyString
+  three: MyString
+  four: MyString
+  five: MyString
+  six: MyString
+  seven: MyString
+  eight: MyString
+  nine: MyString
+  ten: MyString
+  elen: MyString
+  twelve: MyString
+  thirteeen: MyString
+  fourteen: MyString
+  fifteen: MyString
+  good: one
+  tansport: one
+  warehouse: one
+
+two:
+  two: MyString
+  three: MyString
+  four: MyString
+  five: MyString
+  six: MyString
+  seven: MyString
+  eight: MyString
+  nine: MyString
+  ten: MyString
+  elen: MyString
+  twelve: MyString
+  thirteeen: MyString
+  fourteen: MyString
+  fifteen: MyString
+  good: two
+  tansport: two
+  warehouse: two

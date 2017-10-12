@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171010005640) do
+ActiveRecord::Schema.define(version: 20171012174223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,7 +65,36 @@ ActiveRecord::Schema.define(version: 20171010005640) do
     t.index ["user_id"], name: "index_warehouses_on_user_id"
   end
 
+  create_table "workflows", force: :cascade do |t|
+    t.string "one"
+    t.string "two"
+    t.string "three"
+    t.string "four"
+    t.string "five"
+    t.string "six"
+    t.string "seven"
+    t.string "eight"
+    t.string "nine"
+    t.string "ten"
+    t.string "elen"
+    t.string "twelve"
+    t.string "thirteeen"
+    t.string "fourteen"
+    t.string "fifteen"
+    t.bigint "cargos_id"
+    t.bigint "transports_id"
+    t.bigint "warehouses_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cargos_id"], name: "index_workflows_on_cargos_id"
+    t.index ["transports_id"], name: "index_workflows_on_transports_id"
+    t.index ["warehouses_id"], name: "index_workflows_on_warehouses_id"
+  end
+
   add_foreign_key "cargos", "users"
   add_foreign_key "transports", "users"
   add_foreign_key "warehouses", "users"
+  add_foreign_key "workflows", "cargos", column: "cargos_id"
+  add_foreign_key "workflows", "transports", column: "transports_id"
+  add_foreign_key "workflows", "warehouses", column: "warehouses_id"
 end

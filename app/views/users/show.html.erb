@@ -3,13 +3,19 @@
   <h4><%= @user.name %></h4>
 </div>
 
+<div class="container">
+  <% if @user.role == "Cordinator" %>
+    <%= link_to "Create New Workflow", new_workflow_path %>
+  <% end %>
+</div>
+
 <div class="info container">
 
   <% if @cargos.length > 0 %>
     <h4 class="info-title">Goods You've Donated</h4>
     <div class="row">
       <% @cargos.each do |d| %>
-          <div class="col-md-4">
+        <div class="col-md-4">
           <p>Item: <%= d.goods %></p>
           <p>Adress: <%= d.address %></p>
           <p>City: <%= d.city %></p>
@@ -57,8 +63,4 @@
   
 </div>
 
-<% if @user.role == "Node" %>
-  <p> You're a node </p>
-<% else %>
-  <p>you're a cordinaitor.</p>
-<% end %>
+
