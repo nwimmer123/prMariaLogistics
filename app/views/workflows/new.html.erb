@@ -1,8 +1,22 @@
 <div class="container">
   <h1>New Workflow</h1>
 
-  <h3>How Many Steps do you want in this workflow?</h3>
-    <%= text_field(:step, :total) %>
+    <%= form_for :workflow, url: workflows_path do |f| %>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="location">How Many Steps?</label>
+        <div class="col-md-8">
+          <%= f.text_field :step, required: true, class: "form-control" %><br>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-12">
+          <%= f.submit "Submit", class: "btn btn-success" %>
+        </div>
+      </div>
+
+    <% end %>
 </div>
 
 
