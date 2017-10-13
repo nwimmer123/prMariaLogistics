@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 20171013170244) do
     t.string "thirteeen"
     t.string "fourteen"
     t.string "fifteen"
+    t.string "step"
     t.bigint "cargos_id"
     t.bigint "transports_id"
     t.bigint "warehouses_id"

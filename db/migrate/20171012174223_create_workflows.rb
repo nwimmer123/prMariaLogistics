@@ -16,6 +16,7 @@ class CreateWorkflows < ActiveRecord::Migration[5.1]
       t.string :thirteeen
       t.string :fourteen
       t.string :fifteen
+      t.string :step
       t.references :cargos, foreign_key: true
       t.references :transports, foreign_key: true
       t.references :warehouses, foreign_key: true
