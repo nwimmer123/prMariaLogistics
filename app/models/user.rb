@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :cargos
   has_many :transports
   has_many :warehouses
+  has_many :users
 
   def self.confirm(params)
 		@user = User.find_by({email: params[:email]})
