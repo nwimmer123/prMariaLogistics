@@ -1,9 +1,16 @@
 <div class="container">
   <h1>SUPPORT PUERTO RICO'S RECOVERY!</h1> 
-  <h2>HOW CAN YOU HELP?</h2>
 </div>
 
 <div class="container">
+  <h2>Create a new Workflow</h2>
+  <% if current_user.role == "Cordinator" %>
+    <%= link_to "Create New Workflow", new_workflow_path %>
+  <% end %>
+</div>
+
+<div class="container">
+  <h2>HOW CAN YOU HELP?</h2>
   <% if current_user %>
     <li><%= link_to "Volunteer",  root_path %></li>
     <li><%= link_to "Donate Goods", new_cargo_path %></li>
